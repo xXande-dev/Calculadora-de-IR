@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcule Imposto</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav>
+        <h2>Calculo de Imposto de Renda</h2>
+    </nav>
+    <main>
+        <div>
+            <form class="calculo-form" id="calculoForm">
+                <input type="text" class="caixa" id="registro" placeholder="Número do Registro">
+                <br>
+                <input type="text" class="caixa" id="nome" placeholder="Nome">
+                <br>
+                <input type="number" class="caixa" id="salario" placeholder="Salário">
+                <br>
+                <button type="button" id="calcularBtn"><strong>Calcular IR</strong></button>
+                <br>
+                <input type="text" class="caixa" id="resultado" placeholder="Valor do Imposto" readonly>
+            </form>
+        </div>
+        <div>
+            <table>
+                <tr>
+                    <th>Faixa Salarial</th>
+                    <th>Alíquota</th>
+                </tr>
+                <tr>
+                    <td>De R$1.434 a R$2.150</td>
+                    <td>7,5%</td>
+                </tr>
+                <tr>
+                    <td>De R$2.150 a R$2.866</td>
+                    <td>15%</td>
+                </tr>
+                <tr>
+                    <td>De R$2.866 a R$3.583</td>
+                    <td>22,5%</td>
+                </tr>
+                <tr>
+                    <td>Acima de R$3.583</td>
+                    <td>27,5%</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+</body>
+</html>
